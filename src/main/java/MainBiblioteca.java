@@ -10,6 +10,12 @@ public class MainBiblioteca {
 
         Libro libro2 = new Libro("Aprendiendo Java", "Pepito Perez", 1967, 432, "Programación");
 
+        //Norbey Gutierrez
+        Libro libroN = new Libro("Orgullo y Prejuicio", "Jane Austen", 1813, 432, "Romance");
+        Revista revista2N = new Revista("Vogue", "Condé Nast", 2025, 300, "Moda");
+        DVD dvdN = new DVD("Spirited Away", "Hayao Miyazaki", 2001, 125, "Animación/Fantasía");
+
+        //Norbey Gutierrez
         Libro libro3 = new Libro("El Principito", "Antoine de Saint-Exupéry", 1943, 96, "Fabula");
         DVD dvd3 = new DVD("Time", "Time USA, LLC", 2024, 80, "Noticias");
         Revista revista3 = new Revista("Parasite", "Bong Joon-ho", 2019, 132, "Drama/Thriller");
