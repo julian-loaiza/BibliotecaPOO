@@ -16,9 +16,9 @@ public class MainBiblioteca {
         DVD dvdN1 = new DVD("Spirited Away", "Hayao Miyazaki", 2001, 125, "Animación/Fantasía");
 
         //Norbey Gutierrez
-        Libro libro3 = new Libro("El Principito", "Antoine de Saint-Exupéry", 1943, 96, "Fabula");
-        DVD dvd3 = new DVD("Time", "Time USA, LLC", 2024, 80, "Noticias");
-        Revista revista3 = new Revista("Parasite", "Bong Joon-ho", 2019, 132, "Drama/Thriller");
+        Libro libroNorbey = new Libro("El Principito", "Antoine de Saint-Exupéry", 1943, 96, "Fabula");
+        DVD dvdNorbey = new DVD("Time", "Time USA, LLC", 2024, 80, "Noticias");
+        Revista revistaNorbey = new Revista("Parasite", "Bong Joon-ho", 2019, 132, "Drama/Thriller");
 
         // Ruben Toro
         Libro libroR01 =  new Libro("El tunel", "Ernesto Sábato", 1948,104,"Narrativo-Novela");
@@ -55,6 +55,12 @@ public class MainBiblioteca {
         libroOscar.registrarLibro(biblioteca);
         revistaOscar.registrarRevista(biblioteca);
         dvdOscar.registrarDVD(biblioteca);
+        libroN1.registrarLibro(biblioteca);
+        revista2N1.registrarRevista(biblioteca);
+        dvdN1.registrarDVD(biblioteca);
+        libroNorbey.registrarLibro(biblioteca);
+        dvdNorbey.registrarDVD(biblioteca);
+        revistaNorbey.registrarRevista(biblioteca);
 
         // Mostrar todos los elementos
         System.out.println("Elementos en la biblioteca:");
