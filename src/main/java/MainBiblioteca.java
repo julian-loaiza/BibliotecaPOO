@@ -16,7 +16,7 @@ public class MainBiblioteca {
         DVD dvdN1 = new DVD("Spirited Away", "Hayao Miyazaki", 2001, 125, "Animación/Fantasía");
 
         //Norbey Gutierrez
-        Libro libroNorbey = new Libro("El Principito", "Antoine de Saint-Exupéry", 1943, 96, "Fabula");
+        Libro libroNorbey = new Libro("El Principitos", "Antoine de Saint-Exupéry", 1943, 96, "Fabula");
         DVD dvdNorbey = new DVD("Time", "Time USA, LLC", 2024, 80, "Noticias");
         Revista revistaNorbey = new Revista("Parasite", "Bong Joon-ho", 2019, 132, "Drama/Thriller");
 
