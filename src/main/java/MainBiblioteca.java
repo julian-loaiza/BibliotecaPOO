@@ -50,6 +50,11 @@ public class MainBiblioteca {
         Revista revista1984 = new Revista("Time", "Time USA, LLC", 2024, 86, "Actualidad y Política");
         DVD dvd1984 = new DVD("El Padrino", "Francis Ford Coppola", 1972, 175, "Drama Criminal");
 
+        //"Crónica de una muerte anunciada"
+        Libro libro1981 = new Libro("Crónica de una muerte anunciada", "Gabriel García Márquez", 1981, 120, "Realismo Literario");
+        Revista revista1981 = new Revista("The Economist", "The Economist Group", 2024, 92, "Economía y Negocios");
+        DVD dvd1981 = new DVD("La La Land", "Damien Chazelle", 2016, 128, "Musical Romántico");
+
         // Agregar elementos a la biblioteca usando métodos específicos
 
         libro1.registrarLibro(biblioteca);
@@ -65,6 +70,9 @@ public class MainBiblioteca {
         libro1984.registrarLibro(biblioteca);
         revista1984.registrarRevista(biblioteca);
         dvd1984.registrarDVD(biblioteca);
+        libro1981.registrarLibro(biblioteca);
+        revista1981.registrarRevista(biblioteca);
+        dvd1981.registrarDVD(biblioteca);
 
         // Mostrar todos los elementos
         System.out.println("Elementos en la biblioteca:");
