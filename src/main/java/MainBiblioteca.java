@@ -10,16 +10,17 @@ public class MainBiblioteca {
 
         Libro libro2 = new Libro("Aprendiendo Java", "Pepito Perez", 1967, 432, "Programación");
 
-        Libro libro3 = new Libro("El Principito", "Antoine de Saint-Exupéry", 1943, 96, "Fabula");
-        DVD dvd3 = new DVD("Time", "Time USA, LLC", 2024, 80, "Noticias");
-        Revista revista3 = new Revista("Parasite", "Bong Joon-ho", 2019, 132, "Drama/Thriller");
+        // Norbey Gutierrez
+        Libro libroNorbey = new Libro("El Principito", "Antoine de Saint-Exupéry", 1943, 96, "Fabula");
+        DVD dvdNorbey = new DVD("Time", "Time USA, LLC", 2024, 80, "Noticias");
+        Revista revistaNorbey = new Revista("Parasite", "Bong Joon-ho", 2019, 132, "Drama/Thriller");
 
         // Ruben Toro
         Libro libroR01 =  new Libro("El tunel", "Ernesto Sábato", 1948,104,"Narrativo-Novela");
         Revista revistaR01 = new Revista("Cosmo","Carl Sagan", 1995,230,"Ciencia y Naturaleza");
         DVD dvdR01 = new DVD("Cosmos y Galaxias","Carl Sagan", 1998,120,"Ciencia y Naturaleza");
 
-                
+
         // Variables Oscar
         Libro libroOscar = new Libro("Carrie", "Stephen King", 1974, 280, "Terror");
         Revista revistaOscar = new Revista("Nat GEO: Depredadores", "National Geographic", 2024, 2, "Naturaleza");
