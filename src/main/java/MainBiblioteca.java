@@ -40,10 +40,15 @@ public class MainBiblioteca {
         Revista revistafelho = new Revista("Soy motero", "Soymotero.ne5", 2023, 830, "Motocicletas");
         DVD dvdfelho = new DVD("Interstellar", "Christopher Nolan", 2014, 169, "Ciencia ficción épica / Drama espacial");
 
-
+        //"El Alquimista"
         Libro libro0896 = new Libro("El Alquimista", "Paulo Coelho", 1988, 208, "Ficción Filosófica");
         Revista revista0896 = new Revista("Scientific American", "Springer Nature", 2024, 178, "Ciencia y Tecnología");
         DVD dvd0896 = new DVD("Interestelar", "Christopher Nolan", 2014, 169, "Ciencia Ficción");
+
+        //"1984"
+        Libro libro1984 = new Libro("1984", "George Orwell", 1949, 328, "Distopía");
+        Revista revista1984 = new Revista("Time", "Time USA, LLC", 2024, 86, "Actualidad y Política");
+        DVD dvd1984 = new DVD("El Padrino", "Francis Ford Coppola", 1972, 175, "Drama Criminal");
 
         // Agregar elementos a la biblioteca usando métodos específicos
 
@@ -57,6 +62,9 @@ public class MainBiblioteca {
         libro0896.registrarLibro(biblioteca);
         revista0896.registrarRevista(biblioteca);
         dvd0896.registrarDVD(biblioteca);
+        libro1984.registrarLibro(biblioteca);
+        revista1984.registrarRevista(biblioteca);
+        dvd1984.registrarDVD(biblioteca);
 
         // Mostrar todos los elementos
         System.out.println("Elementos en la biblioteca:");
