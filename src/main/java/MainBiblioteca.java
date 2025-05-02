@@ -40,6 +40,7 @@ public class MainBiblioteca {
         Revista revistafelho = new Revista("Soy motero", "Soymotero.ne5", 2023, 830, "Motocicletas");
         DVD dvdfelho = new DVD("Interstellar", "Christopher Nolan", 2014, 169, "Ciencia ficción épica / Drama espacial");
 
+
         Libro libro0896 = new Libro("El Alquimista", "Paulo Coelho", 1988, 208, "Ficción Filosófica");
         Revista revista0896 = new Revista("Scientific American", "Springer Nature", 2024, 178, "Ciencia y Tecnología");
         DVD dvd0896 = new DVD("Interestelar", "Christopher Nolan", 2014, 169, "Ciencia Ficción");
