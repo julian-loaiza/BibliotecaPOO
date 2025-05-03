@@ -1,4 +1,8 @@
 // Clase Libro que hereda de ElementoBiblioteca
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
 public class Libro extends ElementoBiblioteca {
     private int numeroPaginas;
     private String genero;
