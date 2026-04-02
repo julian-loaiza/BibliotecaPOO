@@ -1,6 +1,21 @@
 // Clase principal para demostrar el uso
 public class MainBiblioteca {
     public static void main(String[] args) {
+        long usuarioDemo01 = 1L;
+        long usuarioDemo02 = 2L;
+
+        try {
+            // Inicializa tablas si no existen antes de registrar elementos.
+            DatabaseConnection.initializeDatabase();
+
+            // Crea o reutiliza usuarios para operaciones con FK en prestamos/reservas.
+            UsuarioDAO usuarioDAO = new UsuarioDAO();
+            usuarioDemo01 = usuarioDAO.ensureUsuarioId(1L, "usuario_demo_01");
+            usuarioDemo02 = usuarioDAO.ensureUsuarioId(2L, "usuario_demo_02");
+        } catch (Exception e) {
+            System.err.println("No se pudo inicializar la base de datos: " + e.getMessage());
+        }
+
         Biblioteca biblioteca = new Biblioteca();
 
         // Crear elementos
@@ -42,21 +57,43 @@ public class MainBiblioteca {
 
         // Agregar elementos a la biblioteca usando métodos específicos
 
+        // Registrar todos los elementos creados para persistir en todas las tablas.
         libro1.registrarLibro(biblioteca);
         libro2.registrarLibro(biblioteca);
-        revista1.registrarRevista(biblioteca);
-        dvd1.registrarDVD(biblioteca);
+        libro3.registrarLibro(biblioteca);
+        libroR01.registrarLibro(biblioteca);
         libroOscar.registrarLibro(biblioteca);
+        libro03.registrarLibro(biblioteca);
+        librosanti.registrarLibro(biblioteca);
+        librofelho.registrarLibro(biblioteca);
+
+        revista1.registrarRevista(biblioteca);
+        revista3.registrarRevista(biblioteca);
+        revistaR01.registrarRevista(biblioteca);
         revistaOscar.registrarRevista(biblioteca);
+        revista03.registrarRevista(biblioteca);
+        revistasanti.registrarRevista(biblioteca);
+        revistafelho.registrarRevista(biblioteca);
+
+        dvd1.registrarDVD(biblioteca);
+        dvd3.registrarDVD(biblioteca);
+        dvdR01.registrarDVD(biblioteca);
         dvdOscar.registrarDVD(biblioteca);
+        dvd03.registrarDVD(biblioteca);
+        dvdsanti.registrarDVD(biblioteca);
+        dvdfelho.registrarDVD(biblioteca);
 
         // Mostrar todos los elementos
         System.out.println("Elementos en la biblioteca:");
         biblioteca.mostrarTodosLosElementos();
 
         // Prestar un elemento
-        libro1.prestar();
-        dvdOscar.prestar();
+        libro1.prestar(usuarioDemo01);
+        dvdOscar.prestar(usuarioDemo02);
+
+        // Registrar reservas de ejemplo para poblar la tabla reservas.
+        revista1.reservar(usuarioDemo01, "usuario_demo_01");
+        revista3.reservar(usuarioDemo02, "usuario_demo_02");
 
         // Mostrar elementos disponibles
         System.out.println("\nElementos disponibles:");
